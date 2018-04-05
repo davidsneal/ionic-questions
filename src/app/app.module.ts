@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
+import { TextToSpeech } from '@ionic-native/text-to-speech';
+
 import { HomePage } from '../pages/home/home';
 import { QuestionsPage } from '../pages/questions/questions';
 
@@ -29,6 +31,7 @@ import { QuestionsProvider } from '../providers/questions/questions';
   providers: [
     StatusBar,
     SplashScreen,
+    TextToSpeech,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     QuestionsProvider
   ]
